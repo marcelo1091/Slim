@@ -1,0 +1,11 @@
+{% extends 'layouts/app.twig' %}
+
+{% block content %}
+<h1>CHYLO DZBANIE</h1>
+    {% include 'partials/flash.twig' %}
+    <form action="{{ path_for('auth.login') }}" method="POST">
+        <input type="text" name="nick">
+        <input type="password" name="password">
+        <input type="submit" value="Zaloguj">
+    </form>
+{% endblock %}

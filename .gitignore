@@ -1,0 +1,5 @@
+docker
+vendor
+
+docker-compose.yml
+.env

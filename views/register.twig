@@ -1,0 +1,13 @@
+{% extends 'layouts/app.twig' %}
+
+{% block content %}
+    <form action="{{ path_for('auth.register') }}" method="POST">
+        <input type="text" name="nick">
+        <span style="color: red; font-weight: 700">{{ errors.nick | first }}</span><br>
+        <input type="text" name="email">
+        <span style="color: red; font-weight: 700">{{ errors.email | first }}</span><br>
+        <input type="password" name="password">
+        <span style="color: red; font-weight: 700">{{ errors.password | first }}</span><br>
+        <input type="submit" value="Rejstracja">
+    </form>
+{% endblock %}

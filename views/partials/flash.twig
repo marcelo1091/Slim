@@ -1,0 +1,3 @@
+{% for key, message in flash.getMessages() %}
+    <div class="mb-3 alert alert-{{ key }}">{{ message | first }}</div>
+{% endfor %}
